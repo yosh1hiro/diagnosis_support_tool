@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cheif_complaint: 1
+  pretest_probability: 1.5
+
+two:
+  name: MyString
+  cheif_complaint: 1
+  pretest_probability: 1.5
