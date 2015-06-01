@@ -3,7 +3,7 @@
   <h2>疾患を選択</h2>
 </div>
 <div class="list-group">
-  <%= @disease.each do |disease| %>
+  <%= @diseases.each do |disease| %>
     <%= link_to(event, class: 'list-group-item') do %>
       <h4 class="list-group-item-heading">
         <% disease.name %>
