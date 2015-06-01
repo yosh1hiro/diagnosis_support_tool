@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>
+    <%= @disease.name %>
+  </h1>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        主訴  
+      </div>
+      <div class="panel-body">
+        <%= @disease.cheif_complaint %>
+      </div>
+      <div class="panel-heading">
+        検査前確率
+      </div>
+      <div class="panel-body">
+        <%= @disease.pretest_probability %>  
+      </div>
+    </div>
+  </div>
+</div>

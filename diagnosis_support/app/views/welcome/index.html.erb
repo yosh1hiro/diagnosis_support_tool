@@ -4,9 +4,9 @@
 </div>
 <div class="list-group">
   <%= @diseases.each do |disease| %>
-    <%= link_to(event, class: 'list-group-item') do %>
+    <%= link_to(disease, class: 'list-group-item') do %>
       <h4 class="list-group-item-heading">
-        <% disease.name %>
+        <%= disease.name %>
       </h4>
     <% end %>
   <% end %>
