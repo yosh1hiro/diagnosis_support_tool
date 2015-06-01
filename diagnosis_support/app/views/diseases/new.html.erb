@@ -1,0 +1,29 @@
+<% now = Time.zone.now %>
+<div class="page-header">
+  <h1>疾患作成</h1>
+</div>
+<%= form_for(@disease, class: 'form-horizontal', role: 'form') do |f| %>
+  <% if @disease.errors.any? %>
+    <div class="alert alert-danger">
+      <ul>
+        <% @disease.errors.full_messages.each do |msg| %>
+          <li><%= msg  %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cheif_complaint %>
+    <%= f.select(:cheif_complaint, {"腹痛": 1, "頭痛": 2, "腹痛": 3}) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :pretest_probability %>
+    <%= f.number_field(:pretest_probability) %>
+  </div>
+  <%= f.submit '作成', class: 'btn btn-default', data: { disable_with: '作成中・・・' }  %>
+<% end %>
