@@ -11,6 +11,9 @@ gem 'compass-rails'            # Sassの機能拡張
 gem 'uglifier'                 # JavaScriptの圧縮
 gem 'coffee-rails'             # JavaScriptを簡潔に書ける
 gem 'jquery-rails'             # jQueryが使える
+gem 'twitter-bootstrap-rails'
+gem 'therubyracer' # javascript runtime。lessをコンパイルするために必要
+gem 'less-rails' # Railsでlessを使えるようにする。Bootstrapがlessで書かれているため
 
 # Authentication
 gem 'omniauth'                 # 外部アカウントでログインできる
