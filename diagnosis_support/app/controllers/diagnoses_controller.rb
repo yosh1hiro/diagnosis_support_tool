@@ -1,6 +1,9 @@
 class DiagnosesController < ApplicationController
-  def show
-    @cheif_complaint = Disease.select("cheif_complaint")
+  def index
+    @cheif_complaints = Disease.select(:cheif_complaint).distinct
     @diseases = Disease.where("cheif_complaint = ?", params[:cheif_complaint])
+    @pre_odds 
+    @post_odds
+    @dis = Disease.all
   end
 end

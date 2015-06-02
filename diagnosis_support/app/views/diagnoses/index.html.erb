@@ -1,3 +1,42 @@
 <div class="page-header">
   <h1>診察</h1>
 </div>
+<div class="row">
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        主訴
+      </div>
+      <div class="panel-body">
+        <% @cheif_complaints.each do |cheif_complaint| %>
+          <% case cheif_complaint.cheif_complaint.to_i %>
+          <% when 2 %>
+            <%= "頭痛" %>
+          <% when 3 %>
+            <%= "腹痛" %>
+          <% else %>
+            <%= "その他" %>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="panel-heading">
+        疾患
+      </div>
+      <div class="panel-body">
+        <%= @dis.name %>
+      </div>
+      <div class="panel-heading">
+        病歴 
+      </div>
+      <div class="panel-body">
+
+      </div>
+      <div class="panel-heading">
+        身体所見
+      </div>
+      <div class="panel-body">
+
+      </div>
+    </div>
+  </div>
+</div>

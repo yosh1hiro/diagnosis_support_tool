@@ -1,0 +1,23 @@
+# Ignore bundler config.
+/diagnosis_support/.bundle
+
+# Ignore bundler gems.
+/diagnosis_support/vendor/bundle
+
+# Ignore the default SQLite database.
+/diagnosis_support/db/*.sqlite3
+/diagnosis_support/db/*.sqlite3-journal
+
+
+# Ignore all logfiles and tempfiles.
+/diagnosis_support/log/*.log
+/diagnosis_support/tmp
+
+# Ignore other unneeded files.
+/diagnosis_support/doc/
+/diagnosis_support/*.swp
+/diagnosis_support/*~
+/diagnosis_support/.project
+/diagnosis_support/.DS_Store
+/diagnosis_support/.idea
+/diagnosis_support/.secret
