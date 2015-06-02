@@ -23,7 +23,9 @@
         疾患
       </div>
       <div class="panel-body">
-        <%= @dis.name %>
+        <% @dis.each do |di| %>
+          <%= di.name %>
+        <% end %>
       </div>
       <div class="panel-heading">
         病歴 
